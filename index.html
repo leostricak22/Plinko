@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaussova krivulja</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gaussova krivulja</h1>
+        <p>Gaussova krivulja, poznata i kao normalna krivulja ili zvonasta krivulja, je matematička funkcija koja se često javlja u raznim područjima znanosti i statistike. Ova krivulja je <b>simetrična oko svoje sredine</b> i ima oblik <b>zvonolike krivulje</b>.</p>
+        <p>Matematički opis Gaussove krivulje je dan formulom:</p>
+        <p style="text-align: center;"><code>f(x) = (1 / (σ * √(2π))) * e^(-((x - μ)^2) / (2 * σ^2))</code></p>
+        <p>gdje:</p>
+        <ul>
+            <li><code>f(x)</code> je vrijednost funkcije u točki <code>x</code></li>
+            <li><code>σ</code> (sigma) je standardna devijacija, odgovorna za širinu krivulje</li>
+            <li><code>μ</code> (mu) je srednja vrijednost, odgovorna za pomak krivulje</li>
+            <li><code>e</code> je prirodna logaritamska konstanta (~2.71828)</li>
+            <li><code>π</code> (pi) je matematička konstanta (~3.14159)</li>
+        </ul>
+        <p>Gaussova krivulja ima širok raspon primjena u statistici, fizici, inženjerstvu, ekonomiji i drugim područjima. Ona se često koristi za modeliranje slučajnih varijabli koje se pojavljuju u prirodi i društvenim fenomenima.</p>
+        <p>Zbog svojih svojstava, Gaussova krivulja je također ključna u <b>statističkim testiranjima</b>, <b>inferenciji</b> i <b>predviđanju</b>.</p>
+        
+        <div class="gaussian-graph">
+            <img style="padding-right:25px;" src="graf.png" alt="Gaussova krivulja" width="100%">
+            <p>Graf Gaussove krivulje</p>
+        </div>
+        <p>Simetrična je oko svoje sredine, što znači da je lijeva i desna strana krivulje <b>jednaka</b>. To znači da je srednja vrijednost (μ) distribucije ujedno i <b>središnja točka krivulje</b>.</p>
+
+        <br>
+        <div class="plinko-section">
+            <h2>Plinko</h2>
+            <p>Plinko je popularna igra koja se temelji na ideji <b>Gaussove krivulje</b>. U ovoj igri, loptice se ispuste s na niz prepreka postavljenih u obliku Gaussove krivulje. Svaka loptica pada i odbija se od prepreka. Konačno, loptice završe u jednoj od različitih ladica smještenih na dnu.</p>
+            <p>Zanimljivo je primijetiti kako raspodjela loptica u ladicama na dnu igrališta sliči Gaussovoj krivulji. Kako loptice odbijaju od prepreka i padaju prema dolje, većina loptica završi u srednjim ladicama, dok manje loptica završi u ladicama koje se nalaze na kraju, <b>slično kao što se vrijednosti podataka grupiraju oko srednje vrijednosti u Gaussovoj krivulji</b>.</p>
+            <p>Analogija Plinko igre i Gaussove krivulje omogućava nam da na interaktivan način vizualiziramo i iskusimo koncept raspodjele podataka i statističkih fenomena koji se pojavljuju u prirodi i društvenim sistemima.</p>
+            <div class="gaussian-graph">
+                <img style="padding-right:25px;" src="gauss-video.gif" alt="Gaussova krivulja GIF" width="100%">
+                <p>Plinko igra</p>
+            </div>
+
+            <div class="play-link">
+                Isprobajte igru <a href="plinko.html"><b>Plinko</b></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
