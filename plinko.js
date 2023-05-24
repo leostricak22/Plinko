@@ -12,6 +12,12 @@ let rows = 16;
 let bucketCounts = new Array(cols).fill(0);
 let boundaryPositions = [];
 
+const urlParams = new URLSearchParams(window.location.search);
+if(urlParams.get("space") == null)
+    SPACECONSTANT = 2
+else
+    SPACECONSTANT = urlParams.get('space');       
+
 let input, button;
 
 let money=100;
@@ -32,7 +38,7 @@ function setup() {
     world.gravity.y = 1;
 
     let maxPegsPerRow = rows + 2;
-    let spacing = windowWidth / ((maxPegsPerRow + 1) * 2); 
+    let spacing = windowWidth / ((maxPegsPerRow + 1) * SPACECONSTANT); 
 
     for (let j = 0; j < rows - 2; j++) {
         let pegsThisRow = j + 3;
@@ -160,6 +166,10 @@ function draw() {
 
     textSize(13);
     text(`Pritisnite razmak za bacanje kuglice`, windowWidth-125, 120);
+
+    textSize(13);
+    text(`Izradio: Leo Stričak, 4.RT`, windowWidth-88, windowHeight-40);
+    text(`Tehnička škola Čakovec`, windowWidth-85, windowHeight-20);
 
     textSize(25);
     text(`Novac: ${money.toFixed(2)}€`, 100, 50);
